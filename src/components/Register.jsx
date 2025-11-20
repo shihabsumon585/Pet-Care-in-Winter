@@ -33,7 +33,7 @@ const Register = () => {
 
     return (
         <div className="card-body bg-white flex justify-center items-center w-fit mx-auto mt-4 p-10 rounded-xl">
-            <title>Signup</title>
+            <title>SignUp</title>
             <h1 className='text-2xl font-bold mb-4'>SignUp your account</h1>
             <form onSubmit={handleCreateUser}>
                 <fieldset className="fieldset *:w-80">
