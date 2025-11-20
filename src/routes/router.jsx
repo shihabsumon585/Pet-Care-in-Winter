@@ -6,6 +6,7 @@ import My_Profile from "../components/My_Profile";
 import ViewDetails from "../components/ViewDetails";
 import Login from "../components/Login";
 import Register from "../components/Register";
+import PrivateRoutes from "../provider/PrivateRoutes";
 
 const router = createBrowserRouter([
     {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/view-details",
-                element: <ViewDetails></ViewDetails>
+                element: <PrivateRoutes><ViewDetails></ViewDetails></PrivateRoutes>
             },
             {
                 path: "/login",
