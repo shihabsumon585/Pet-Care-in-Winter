@@ -1,6 +1,6 @@
 import React from 'react';
 import logoImg from "../assets/logo.png"
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import "./Navbar.css"
 
 const Navbar = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Login</a>
+                <Link to={"/login"} className="btn">Login</Link>
             </div>
         </div>
     );
