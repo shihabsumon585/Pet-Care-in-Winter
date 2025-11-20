@@ -3,7 +3,6 @@ import TipsCareCard from "./TipsCareCard";
 
 const TipsCare = () => {
     const [data, setData] = useState()
-    console.log(data);
 
     useEffect(() => {
         fetch("/tipscare.json")
