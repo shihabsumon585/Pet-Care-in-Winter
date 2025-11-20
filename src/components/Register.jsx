@@ -33,23 +33,23 @@ const Register = () => {
 
     return (
         <div className="card-body bg-white flex justify-center items-center w-fit mx-auto mt-4 p-10 rounded-xl">
-            <title>Register</title>
-            <h1 className='text-2xl font-bold mb-4'>Register your account</h1>
+            <title>Signup</title>
+            <h1 className='text-2xl font-bold mb-4'>SignUp your account</h1>
             <form onSubmit={handleCreateUser}>
                 <fieldset className="fieldset *:w-80">
                     {/* Name */}
                     <label className="label">Your Name</label>
                     <input name='name' type="text" className="input" placeholder="Enter your name" />
-                    {/* Photo URL */}
-                    <label className="label">Photo URL</label>
-                    <input name='photo' type="text" className="input" placeholder="Enter the photo URL" />
                     {/* email */}
                     <label className="label">Email</label>
                     <input name='email' type="email" className="input" placeholder="Enter your email address" />
+                    {/* Photo URL */}
+                    <label className="label">Photo URL</label>
+                    <input name='photo' type="text" className="input" placeholder="Enter the photo URL" />
                     {/* password */}
                     <label className="label">Password</label>
                     <input name='password' type="password" className="input" placeholder="Enter your password" />
-                    <button type='submit' className="btn bg-accent text-base-100 mt-4">Register</button>
+                    <button type='submit' className="btn bg-accent text-base-100 mt-4">SignUp</button>
                 </fieldset>
             </form>
             <p>Already have An Account ? <Link className='text-secondary' to={"/login"}>Login</Link></p>

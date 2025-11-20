@@ -28,10 +28,11 @@ const Login = () => {
         signInWithGoogle()
             .then((result) => {
                 console.log(result.user);
+                navigate("/");
             }).catch((error) => {
                 console.log(error);
             });
-        navigate(`${location.state ? location.state : "/"}`);
+        
     }
     return (
         <div className="card-body bg-white flex justify-center items-center w-fit mx-auto mt-10 p-10 rounded-xl">
@@ -56,7 +57,7 @@ const Login = () => {
                 Login with Google
             </button>
 
-            <p>Dont’t have an account ? <Link className='text-secondary' to={"/register"}>Signup</Link></p>
+            <p>Dont’t have an account ? <Link className='text-secondary' to={"/register"}>SignUp</Link></p>
         </div>
     );
 };
