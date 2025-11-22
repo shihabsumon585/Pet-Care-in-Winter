@@ -34,9 +34,8 @@ const Login = () => {
             });
         
     }
-    const setEmailInLocalStorage = (e) => {
-        const email = e.target.email.value;
-        console.log(email);
+    const handleOnchange = (e) => {
+        const email = e.target.value;
         localStorage.setItem("email", email);
     }
     return (
@@ -47,12 +46,12 @@ const Login = () => {
                 <fieldset className="fieldset *:w-80">
                     {/* email */}
                     <label className="label">Email</label>
-                    <input onChange={""} name='email' type="email" className="input" placeholder="Enter your email address" />
+                    <input onChange={handleOnchange} name='email' type="email" className="input" placeholder="Enter your email address" />
                     {/* password */}
                     <label className="label">Password</label>
                     <input name='password' type="password" className="input" placeholder="Enter your password" />
 
-                    <div><Link onClick={setEmailInLocalStorage} to={"/forgot-password"} className="link link-hover">Forgot password?</Link></div>
+                    <div><Link to={"/forgot-password"} className="link link-hover">Forgot password?</Link></div>
 
                     <button type='submit' className="btn bg-accent text-base-100 mt-4">Login</button>
                 </fieldset>

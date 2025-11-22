@@ -1,17 +1,20 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { AuthContext } from '../provider/AuthProvider';
 import { toast, ToastContainer } from 'react-toastify';
 
 const ForgotPassword = () => {
     const { resetPassword } = useContext(AuthContext);
+    const [email, setEmail] = useState(localStorage.getItem("email"));
     const handleForgot = (e) => {
         e.preventDefault();
-        const email = e.target.email.value;
-        resetPassword(email)
-            .then((u)=>{
-                console.log(u);
+        const emailValue = e.target.email.value;
+        resetPassword(emailValue)
+            .then(()=>{                
+                localStorage.removeItem("email");
+                setEmail("");
                 toast("Reset password link sent to your email")
                 window.open("https://mail.google.com/", "_blank");
+                
             })
             .catch((error) => {
                 const errorCode = error.code;
@@ -20,8 +23,7 @@ const ForgotPassword = () => {
             });
         e.target.reset();
     }
-    const email = localStorage.getItem("email");
-    console.log(email);
+    
     return (
         <div className='mx-auto '>
             <ToastContainer></ToastContainer>
