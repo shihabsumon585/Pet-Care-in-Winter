@@ -14,7 +14,7 @@ const TipsCare = () => {
     return (
         <div className="mt-15">
             <h1 className="text-2xl text-black font-bold text-center mb-4">Winter Care Tips for Pets</h1>
-            <div className="grid grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 overflow-x-hidden gap-6">
                 {
                     data?.map(tip => <TipsCareCard key={tip.tipId} tip={tip}></TipsCareCard>)
                 }

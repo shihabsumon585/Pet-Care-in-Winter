@@ -5,7 +5,7 @@ const ServicesCard = ({ service }) => {
     // console.log(service);
 
     return (
-        <div className="card bg-base-100 w-96 shadow-sm space-y-4 ">
+        <div className="card bg-base-100 w-full shadow-sm space-y-4 ">
 
             <figure>
                 <img

@@ -18,12 +18,12 @@ const PatientFeedback = () => {
                 </h2>
 
                 <div
-                    className="grid grid-cols-1 md:grid-cols-3 gap-8 "
-                    data-aos="slide-left"
+                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 overflow-x-hidden"
+                    data-aos="fade-left"
                     data-aos-duration="1000"
                     data-aos-delay="300"
                     // data-aos-once="true"
-                > {/**nah ata comment kore deyar poreo jeta chacchi seta hocche na */}
+                >
 
                     <div className="card bg-base-100 shadow-xl py-8 flex flex-col items-center rounded-xl hover:scale-105 duration-300">
                         <FaUserFriends className="text-5xl text-accent mb-4" />

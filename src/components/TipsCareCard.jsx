@@ -2,7 +2,7 @@ import React from 'react';
 
 const TipsCareCard = ({tip}) => {
     return (
-        <div className="max-w-sm bg-white shadow-md rounded-xl overflow-hidden border hover:shadow-lg transition">
+        <div className="w-full bg-white shadow-md rounded-xl overflow-hidden border hover:shadow-lg transition">
             <img
                 src={tip?.image}
                 alt={tip?.title}
