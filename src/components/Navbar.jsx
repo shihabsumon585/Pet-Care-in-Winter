@@ -5,20 +5,15 @@ import "./Navbar.css"
 import { AuthContext } from '../provider/AuthProvider';
 
 const Navbar = () => {
-
     const { user, logOut } = useContext(AuthContext);
-    console.log(user);
-
     const links = <>
         <li><NavLink to={"/"}>Home</NavLink></li>
         <li><NavLink to={"/services"}>Services</NavLink></li>
         <li><NavLink to={"/my-profile"}>My Profile</NavLink></li>
-    </>
-    
+    </>    
     const handleLogOut = () => {
         logOut();
     }
-
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="navbar-start">
@@ -46,5 +41,4 @@ const Navbar = () => {
         </div>
     );
 };
-
 export default Navbar;

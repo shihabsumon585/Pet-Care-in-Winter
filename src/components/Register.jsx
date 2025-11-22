@@ -6,24 +6,16 @@ import { AuthContext } from '../provider/AuthProvider';
 
 const Register = () => {
     const { createUser, setUser, updateUser } = useContext(AuthContext);
-
     const navigate = useNavigate();
-
     const handleCreateUser = (e) => {
         e.preventDefault();
-
         const name = e.target.name.value;
         const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        // console.log(name, photo, email, password);
-
         createUser(email, password)
             .then((result) => {
-                // console.log(result);
-
-                updateUser({displayName: name, photoURL: photo})
-                
+                updateUser({displayName: name, photoURL: photo})                
                 setUser({...result.user, displayName: name, photoURL: photo});
                 navigate("/");
             })

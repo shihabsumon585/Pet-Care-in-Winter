@@ -10,11 +10,8 @@ const Login = () => {
 
     const handleLogIn = (e) => {
         e.preventDefault();
-
         const email = e.target.email.value;
         const password = e.target.password.value;
-
-
         userLogin(email, password)
             .then((result) => {
                 setUser(result.user);
@@ -31,8 +28,7 @@ const Login = () => {
                 navigate("/");
             }).catch((error) => {
                 console.log(error);
-            });
-        
+            });        
     }
     const handleOnchange = (e) => {
         const email = e.target.value;
