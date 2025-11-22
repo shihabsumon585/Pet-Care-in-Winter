@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../provider/AuthProvider';
 
 
+
 const Register = () => {
     const { createUser, setUser, updateUser } = useContext(AuthContext);
 

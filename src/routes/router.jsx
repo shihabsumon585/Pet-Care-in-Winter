@@ -7,6 +7,7 @@ import ViewDetails from "../components/ViewDetails";
 import Login from "../components/Login";
 import Register from "../components/Register";
 import PrivateRoutes from "../provider/PrivateRoutes";
+import ForgotPassword from "../components/ForgotPassword";
 
 const router = createBrowserRouter([
     {
@@ -26,8 +27,9 @@ const router = createBrowserRouter([
                 element: <PrivateRoutes><My_Profile></My_Profile></PrivateRoutes>
             },
             {
-                path: "/view-details",
-                element: <PrivateRoutes><ViewDetails></ViewDetails></PrivateRoutes>
+                path: "/view-details/:id",
+                element: <PrivateRoutes><ViewDetails></ViewDetails></PrivateRoutes>,
+                loader: () => fetch("/services.json")
             },
             {
                 path: "/login",
@@ -36,6 +38,10 @@ const router = createBrowserRouter([
             {
                 path: "/register",
                 element: <Register></Register>
+            },
+            {
+                path: "/forgot-password",
+                element: <ForgotPassword></ForgotPassword>
             }
         ]
     }
