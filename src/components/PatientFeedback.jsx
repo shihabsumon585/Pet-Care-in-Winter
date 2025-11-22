@@ -18,7 +18,7 @@ const PatientFeedback = () => {
                 </h2>
 
                 <div
-                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 overflow-x-hidden"
+                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 overflow-x-hidden py-10"
                     data-aos="fade-left"
                     data-aos-duration="1000"
                     data-aos-delay="300"
