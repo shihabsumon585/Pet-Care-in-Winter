@@ -5,7 +5,7 @@ import Footer from '../components/footer';
 
 const HomeLayout = () => {
     return (
-        <div className='min-h-screen flex flex-col'> 
+        <div className='min-h-screen flex flex-col relative'> 
             <header className='w-11/12 mx-auto'>
                 <Navbar></Navbar>
             </header>

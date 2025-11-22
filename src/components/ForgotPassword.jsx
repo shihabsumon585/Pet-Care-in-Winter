@@ -21,7 +21,6 @@ const ForgotPassword = () => {
                 const errorMessage = error.message;
                 console.log(errorCode, errorMessage);
             });
-        e.target.reset();
     }
     
     return (
