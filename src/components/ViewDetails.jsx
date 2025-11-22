@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { Star } from "lucide-react";
-import { toast, ToastContainer  } from 'react-toastify';
+import { toast, Toaster } from 'react-hot-toast';
 
 const ViewDetails = () => {
 
@@ -24,7 +24,7 @@ const ViewDetails = () => {
 
     return (
         <div className='bg-base-300'>
-            <ToastContainer />
+            <Toaster></Toaster>
             <title>Details</title>
 
             <div className="flex justify-center p-6">

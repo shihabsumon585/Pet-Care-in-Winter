@@ -21,4 +21,4 @@ Deployed as a SPA (no reload errors)
 
 
 NPM PACKAGE USE:
-React, React Router, tailwindcss, daisyUI, Firebase, Firebase Authentication, Swiper, Tostify, Lucide React Icon etc.
+React, React Router, tailwindcss, daisyUI, Firebase, Firebase Authentication, Swiper, react-hot-toast, AOS Package Lucide React Icon etc.

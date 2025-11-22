@@ -4,7 +4,6 @@ import { toast, Toaster } from 'react-hot-toast';
 
 const UpdateProfile = () => {
     const { updateUser, user, setUser } = useContext(AuthContext);
-    console.log(user);
     const handleUpdate = (e) => {
         e.preventDefault();
         const name = e.target.name.value;

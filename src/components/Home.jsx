@@ -4,6 +4,7 @@ import ServicesCard from './ServicesCard';
 import { Link } from 'react-router';
 import TipsCare from './TipsCare';
 import MeetOurExpertVets from './MeetOurExpertVets';
+import PatientFeedback from './PatientFeedback';
 
 const Home = () => {
     const [data, setData] = useState()
@@ -38,6 +39,9 @@ const Home = () => {
 
             {/* Meet Our Experts Vets */}
             <MeetOurExpertVets></MeetOurExpertVets>
+
+            {/* Patient Feedback */}
+            <PatientFeedback></PatientFeedback>
         </div>
     );
 };

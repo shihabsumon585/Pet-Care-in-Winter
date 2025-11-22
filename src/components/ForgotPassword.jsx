@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { AuthContext } from '../provider/AuthProvider';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast, Toaster } from 'react-hot-toast';
 
 const ForgotPassword = () => {
     const { resetPassword } = useContext(AuthContext);
@@ -26,7 +26,7 @@ const ForgotPassword = () => {
     
     return (
         <div className='mx-auto '>
-            <ToastContainer></ToastContainer>
+            <Toaster></Toaster>
             <h1 className='text-2xl font-bold my-10 text-center '>Reset Password</h1>
             <form className='flex justify-center' onSubmit={handleForgot}>
                 <fieldset className="fieldset *:w-80">
