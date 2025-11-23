@@ -3,7 +3,7 @@ PROJECT NAME: WarmPaws – Pet Care in Winter
 PROJECT PURPOSE:
 The purpose of this project is to raise awareness about proper winter care for dogs and ensure they receive the best possible protection during the cold season. It aims to guide pet owners with reliable care tips, essential services, and expert support to keep their furry companions healthy and safe.
 
-LIVE URL: https://pet-care-in-winter-22ce3.web.app
+LIVE URL: https://pet-care-in-winter-22ce3.web.app/
 
 
 KEY FEATURES:

@@ -33,10 +33,12 @@ const Login = () => {
                 navigate(`${location.state ? location.state : "/"}`);
                 setError("");
                 toast("Login succesfully complete");
+                localStorage.removeItem("email");
             })
             .catch(err => {
                 setError(err?.message)
                 toast(err?.message);
+                localStorage.removeItem("email");
             })
     }
     const handlLoginWithGoggle = () => {
